@@ -1,9 +1,4 @@
-# super-bot
-
-[![PyPI - Version](https://img.shields.io/pypi/v/super-bot.svg)](https://pypi.org/project/super-bot)
-[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/super-bot.svg)](https://pypi.org/project/super-bot)
-
------
+# SuperBot
 
 **Table of Contents**
 
