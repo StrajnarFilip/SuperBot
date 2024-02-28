@@ -4,19 +4,22 @@
 from datetime import timedelta, datetime
 
 
-class Duration():
+class Timer():
 
     def __init__(self, duration: timedelta):
         self.start = datetime.now()
         self.end = self.start + duration
 
-    def keep_running(self) -> bool:
+    def expired(self) -> bool:
+        return self.end < datetime.now()
+
+    def ongoing(self) -> bool:
         return self.end > datetime.now()
 
 
-def run_for_minutes(minutes: int) -> Duration:
-    return Duration(timedelta(minutes=minutes))
+def minutes(minutes: int) -> Timer:
+    return Timer(timedelta(minutes=minutes))
 
 
-def run_for_hours(hours: int) -> Duration:
-    return Duration(timedelta(hours=hours))
+def hours(hours: int) -> Timer:
+    return Timer(timedelta(hours=hours))
