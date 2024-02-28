@@ -6,7 +6,7 @@ from pynput.mouse import Button
 from pynput.keyboard import Key, KeyCode
 from secrets import randbelow
 from time import sleep
-from extra_random import ExtraRandom
+from super_bot.extra_random import ExtraRandom
 
 
 class SuperBot:
