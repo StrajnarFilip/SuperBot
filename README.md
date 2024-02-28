@@ -13,7 +13,7 @@
 ## Installation
 
 ```console
-pip install super-bot
+pip install -U "git+https://github.com/StrajnarFilip/SuperBot.git@master"
 ```
 
 ## License
