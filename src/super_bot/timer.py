@@ -16,6 +16,9 @@ class Timer():
     def ongoing(self) -> bool:
         return self.end > datetime.now()
 
+    def time_left(self) -> timedelta:
+        return self.end - datetime.now()
+
 
 def minutes(minutes: int) -> Timer:
     return Timer(timedelta(minutes=minutes))
